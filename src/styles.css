@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+  .layout {
+    width: 1366px;
+    height: 768px;
+
+    display: grid;
+    grid:
+      "sidebar body" 1fr
+      / auto 1fr;
+    gap: 0px;
+  }
+
+  .sidebar { grid-area: auto; }
+  .body { grid-area: body; }
+  /* #sidebar {
+    height: 100%;
+    min-height: 100vh;
+    min-width: 180px;
+  }
+.container {
+ display : flex;
+ flex-direction: row;
+}
+.child{
+flex-grow: 1;
+} */
