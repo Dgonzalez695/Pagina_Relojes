@@ -1,0 +1,8 @@
+#sidebar {
+  height: auto;
+  /* margin-top: 1vh; */
+  min-height: 100px;
+  min-width: 100px;
+  background-color: #e3b019;
+}
+

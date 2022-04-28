@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-nav-bar',
-  templateUrl: './nav-bar.component.html',
+  selector: 'app-relojes',
+  templateUrl: './relojes.component.html',
   styles: [
   ]
 })
-export class NavBarComponent implements OnInit {
+export class RelojesComponent implements OnInit {
 
   constructor() { }
 

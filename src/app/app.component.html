@@ -1,24 +1,20 @@
-<!-- <div class="d-flex">
-  <div class="container">
-    <app-sidebar></app-sidebar>
-  </div>
-  <div class="container">
-
-    <app-nav-bar></app-nav-bar>
-  </div>
-</div> -->
-
-<section class="layout">
-  <div class="body">
-    <app-nav-bar></app-nav-bar>
-
-    <div class="container-fluid">
-      <app-items></app-items>
+  <div class="grid" >
+    <div class="row align-items-start">
+      <div class="col-md-auto">
+        <app-navbar></app-navbar>
+      </div>
     </div>
 
+  <div class="row">
+    <div class="col-2 justify-content-start">
+      <app-sidebar></app-sidebar>
+    </div>
   </div>
 
-  <div class="sidebar">
-    <app-sidebar></app-sidebar>
+  <div class="row align-items-end">
+    <div class="col-md-12">
+      <app-footer></app-footer>
+    </div>
   </div>
-</section>
+</div>
+

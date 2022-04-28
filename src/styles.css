@@ -1,25 +1,4 @@
-  .layout {
-    width: 1366px;
-    height: 768px;
-
-    display: grid;
-    grid:
-      "sidebar body" 1fr
-      / auto 1fr;
-    gap: 0px;
+html, body {
+  background-color: #14171b;
+  height: 100%;
   }
-
-  .sidebar { grid-area: auto; }
-  .body { grid-area: body; }
-  /* #sidebar {
-    height: 100%;
-    min-height: 100vh;
-    min-width: 180px;
-  }
-.container {
- display : flex;
- flex-direction: row;
-}
-.child{
-flex-grow: 1;
-} */
