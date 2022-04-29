@@ -6,11 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class RelojesComponent implements OnInit {
+export class RelojesComponent{
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  Lista:string[]=["casio","kosmo","g-force","current","T5"];
 
 }

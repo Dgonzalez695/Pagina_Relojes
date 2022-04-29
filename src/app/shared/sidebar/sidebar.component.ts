@@ -6,11 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.css'
   ]
 })
-export class SidebarComponent implements OnInit {
+export class SidebarComponent{
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  Lista:string[]=["casio","kosmo","g-force","current","T5"];
 
 }

@@ -1,1 +1,24 @@
-<p>relojes works!</p>
+<!-- <div class="row">
+  <div class="col-sm-6 card" style="max-width: 17rem;" *ngFor="let item of Lista">
+  <img src="assets/IMG-Relojes/IMG_1147.jpg" class="card-img-top" alt="...">
+  <div class="card-body text-white bg-danger mb-3">
+    <h5 class="card-title">CURREN</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div> -->
+
+<div class="row row-cols-1 row-cols-md-4 g-4">
+  <div class="col" *ngFor="let item of Lista let i">
+    <div class="card text-center w-100 h-100">
+      <img src="assets/IMG-Relojes/IMG_1147.jpg" class="card-img-top " alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{item}}</h5>
+        <p class="card-text">This  little bit longer.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
