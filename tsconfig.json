@@ -23,6 +23,7 @@
       "dom"
     ]
   },
+  "include": ["src/**/*.ts", "tests/**/*.ts"],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
