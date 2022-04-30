@@ -8,6 +8,7 @@ import { RelojesComponent } from './Relojes/components/relojes/relojes.component
 import { DetallesRelojComponent } from './Relojes/components/detalles-reloj/detalles-reloj.component';
 import { RelojesModule } from './Relojes/relojes.module';
 import { SharedModule } from './shared/shared.module';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { SharedModule } from './shared/shared.module';
   imports: [
     BrowserModule,
     RelojesModule,
-    SharedModule
+    SharedModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

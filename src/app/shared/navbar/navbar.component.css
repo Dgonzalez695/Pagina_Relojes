@@ -1,10 +1,17 @@
 nav{
   /* background-color: rgba(0, 0, 0, 0); */
-  background-color: #e3b019;
-  margin-top: -1px;
+  background-color: #161616;
+
+  border-radius: 1px;
 }
 
-img{
+/* img{
   width: 10%;
   height: 15%;
+} */
+
+img{
+  width: 30%;
+  margin-top: -8px;
 }
+
