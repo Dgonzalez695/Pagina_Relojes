@@ -5,13 +5,9 @@ import { RelojesService } from 'src/app/Relojes/services/relojes.service';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css'
-  ]
+  styleUrls: ['./navbar.component.css'],
 })
-export class NavbarComponent{
-
-  constructor() { }
-
-
+export class NavbarComponent {
+  constructor() {}
 
 }

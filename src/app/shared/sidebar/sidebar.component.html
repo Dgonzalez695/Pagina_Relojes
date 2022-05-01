@@ -6,11 +6,12 @@
   <div class="col mt-3 mx-1">
     <ul class="list-group mx-auto justify-content-center">
       <li
-        routerLink="{{ item }}"
+      *ngFor="let item of categorias"
+        routerLink="categoria/{{item.nombre}}"
         routerLinkActive="active"
         [routerLinkActiveOptions]="{ exact: true }"
         class="list-group-item text-center"
-        *ngFor="let item of categorias"
+        (click)="mostrarCategoria(item.nombre)"
       >
         <strong>
         {{ item.nombre| titlecase }}

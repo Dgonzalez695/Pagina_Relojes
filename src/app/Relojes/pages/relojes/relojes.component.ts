@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { productos } from '../../interfaces/productos.interface';
-import { RelojesService } from '../../services/relojes.service';
+import { RelojesService } from 'src/app/Relojes/services/relojes.service';
+
 
 @Component({
   selector: 'app-relojes',
