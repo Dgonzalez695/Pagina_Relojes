@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DetallesRelojComponent } from './Relojes/components/detalles-reloj/detalles-reloj.component';
 import { RelojesComponent } from './Relojes/components/relojes/relojes.component';
 import { CategoriaComponent } from './Relojes/pages/categoria/categoria.component';
 
@@ -10,7 +11,11 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: 'categoria/:id',
+    path: 'detallesreloj',
+    component: DetallesRelojComponent,
+  },
+  {
+    path: 'categoria',
     component: CategoriaComponent,
   },
   {

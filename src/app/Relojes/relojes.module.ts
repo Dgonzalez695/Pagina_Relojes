@@ -2,13 +2,17 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DetallesRelojComponent } from './components/detalles-reloj/detalles-reloj.component';
 import { RelojesComponent } from './components/relojes/relojes.component';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from '../app-routing.module';
+import { CategoriaComponent } from './pages/categoria/categoria.component';
 
 
 
 @NgModule({
   declarations: [
     DetallesRelojComponent,
-    RelojesComponent
+    RelojesComponent,
+    CategoriaComponent
   ],
   exports: [
     DetallesRelojComponent,
@@ -16,7 +20,8 @@ import { RelojesComponent } from './components/relojes/relojes.component';
   ],
 
   imports: [
-    CommonModule
+    CommonModule,
+    AppRoutingModule
   ]
 })
 export class RelojesModule { }

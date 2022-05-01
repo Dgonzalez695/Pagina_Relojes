@@ -1,14 +1,18 @@
 import { Component, OnInit } from '@angular/core';
+import { productos } from '../../interfaces/productos.interface';
+import { RelojesService } from '../../services/relojes.service';
 
 @Component({
   selector: 'app-relojes',
   templateUrl: './relojes.component.html',
-  styleUrls: ['./relojes.component.css']
+  styleUrls: ['./relojes.component.css'],
 })
-export class RelojesComponent{
+export class RelojesComponent {
+  constructor(private _servicesRelojes: RelojesService) {}
 
-  constructor() { }
 
-  Lista:string[]=["casio","kosmo","g-force","current","T5"];
 
+  get productos() {
+    return this._servicesRelojes.productos;
+  }
 }

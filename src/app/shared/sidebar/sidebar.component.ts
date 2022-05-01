@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { categorias } from 'src/app/Relojes/interfaces/categorias.interface';
+import { RelojesService } from 'src/app/Relojes/services/relojes.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -8,8 +10,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent{
 
-  constructor() { }
+  constructor( private _servicesCategorias : RelojesService ) { }
 
-  Lista:string[]=["casio","kosmo","g-force","current","T5"];
+  get categorias(){
+    return this._servicesCategorias.categorias
+  }
 
 }

@@ -1,15 +1,28 @@
 <div class="row row-cols-md-5 g-4 mt-4 mx-1">
-  <div class="col" *ngFor="let item of Lista; let i">
-    <div class="card text-center w-100 h-100">
+  <div class="col" *ngFor="let item of productos; let i">
+    <div
+      routerLink="{{ item }}"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="card text-center w-100 h-100 rel"
+    >
       <img
         src="assets/IMG-Relojes/IMG_1147.jpg"
         class="card-img-top"
         alt="..."
       />
-      <div class="card-body">
-        <h5 class="card-title">{{ item }}</h5>
-        <p class="card-text">This little bit longer.</p>
+      <div class="card bg-dark ">
+        <div class="card-body ">
+          <h5 class="card-title text-light">{{ item.nombre }}</h5>
+          <p class="card-text text-light"> {{ item.modelo}}</p>
+        </div>
+        <div class="card-footer bg-transparent border-success">
+          <p class="card-text text-light">$ {{ item.precio }}</p>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+CT001,CT002,CT003,CT004,CT005,CT006,CT007,CT008,CT009,CT010,CT011,CT012,CT013,CT014,CT015
+KOSMO, TEVISE, NAVIFORCE, CASIO, Q&Q, KAIROS, TEMPUS, YESS, CURREN,T5, G-FORCE, G SHOCK CASIO, LOIX, LOTO, G-FOX

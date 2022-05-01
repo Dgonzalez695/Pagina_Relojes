@@ -5,9 +5,15 @@
 
   <div class="col mt-3 mx-1">
     <ul class="list-group mx-auto justify-content-center">
-      <li *ngFor="let item of Lista" class="list-group-item text-center">
+      <li
+        routerLink="{{ item }}"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="list-group-item text-center"
+        *ngFor="let item of categorias"
+      >
         <strong>
-          {{ item | titlecase }}
+        {{ item.nombre| titlecase }}
         </strong>
       </li>
     </ul>
