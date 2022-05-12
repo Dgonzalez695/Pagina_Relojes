@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { RelojesComponent } from './Relojes/pages/relojes/relojes.component';
-import { CategoriaComponent } from './Relojes/pages/categoria/categoria.component';
 import { DetallesRelojComponent } from './Relojes/pages/detalles-reloj/detalles-reloj.component';
 
 const routes: Routes = [
@@ -16,7 +15,7 @@ const routes: Routes = [
   },
   {
     path: 'categoria/:categ',
-    component: CategoriaComponent,
+    component: RelojesComponent,
   },
   {
     path: '**',

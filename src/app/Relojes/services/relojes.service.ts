@@ -809,65 +809,66 @@ export class RelojesService {
   ];
   private _categorias: categorias[] = [
     {
-      nombre: 'KOSMO',
-      CodCategoria: 'CT001',
-    },
-    {
-      nombre: 'TEVISE',
-      CodCategoria: 'CT002',
-    },
-    {
-      nombre: 'NAVIFORCE',
-      CodCategoria: 'CT003',
-    },
-    {
-      nombre: 'CASIO',
-      CodCategoria: 'CT004',
-    },
-    {
-      nombre: 'Q&Q',
-      CodCategoria: 'CT005',
-    },
-    {
-      nombre: 'KAIROS',
-      CodCategoria: 'CT006',
-    },
-    {
-      nombre: 'TEMPUS',
-      CodCategoria: 'CT007',
-    },
-    {
-      nombre: 'YESS',
-      CodCategoria: 'CT008',
-    },
-    {
-      nombre: 'CURREN',
-      CodCategoria: 'CT009',
-    },
-    {
-      nombre: 'T5',
-      CodCategoria: 'CT010',
-    },
-    {
-      nombre: 'G-FORCE',
-      CodCategoria: 'CT011',
-    },
-    {
-      nombre: 'G SHOCK CASIO',
-      CodCategoria: 'CT012',
-    },
-    {
-      nombre: 'LOIX',
-      CodCategoria: 'CT013',
-    },
-    {
-      nombre: 'LOTO',
-      CodCategoria: 'CT014',
-    },
-    {
-      nombre: 'G-FOX',
-      CodCategoria: 'CT015',
-    },
+      "id": 1,
+      "nombre": "Kosmo",
+      "CodCategoria": "CT001"
+    }, {
+      "id": 2,
+      "nombre": "Tevise",
+      "CodCategoria": "CT002"
+    }, {
+      "id": 3,
+      "nombre": "Naviforce",
+      "CodCategoria": "CT003"
+    }, {
+      "id": 4,
+      "nombre": "Casio",
+      "CodCategoria": "CT004"
+    }, {
+      "id": 5,
+      "nombre": "Q&q",
+      "CodCategoria": "CT005"
+    }, {
+      "id": 6,
+      "nombre": "Kairos",
+      "CodCategoria": "CT006"
+    }, {
+      "id": 7,
+      "nombre": "Tempus",
+      "CodCategoria": "CT007"
+    }, {
+      "id": 8,
+      "nombre": "Yess",
+      "CodCategoria": "CT008"
+    }, {
+      "id": 9,
+      "nombre": "Curren",
+      "CodCategoria": "CT009"
+    }, {
+      "id": 10,
+      "nombre": "T5",
+      "CodCategoria": "CT010"
+    }, {
+      "id": 11,
+      "nombre": "G-force",
+      "CodCategoria": "CT011"
+    }, {
+      "id": 12,
+      "nombre": "G Shock Casio",
+      "CodCategoria": "CT012"
+    }, {
+      "id": 13,
+      "nombre": "Loix",
+      "CodCategoria": "CT013"
+    }, {
+      "id": 14,
+      "nombre": "Loto",
+      "CodCategoria": "CT014"
+    }, {
+      "id": 15,
+      "nombre": "G-fox",
+      "CodCategoria": "CT015"
+    }
   ];
 
   get productos(): productos[] {
@@ -877,6 +878,8 @@ export class RelojesService {
   get categorias(): categorias[] {
     return [...this._categorias];
   }
+
+
 
   constructor() {}
 }

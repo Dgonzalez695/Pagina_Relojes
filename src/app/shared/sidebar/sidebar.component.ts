@@ -10,10 +10,6 @@ import { RelojesService } from 'src/app/Relojes/services/relojes.service';
 export class SidebarComponent {
   constructor(private _servicesCategorias: RelojesService) {}
 
-  mostrarCategoria(categoria: string) {
-    console.log(categoria);
-  }
-
   get categorias() {
     return this._servicesCategorias.categorias;
   }

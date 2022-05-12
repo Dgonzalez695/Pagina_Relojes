@@ -1,5 +1,5 @@
 <div class="row row-cols-md-5 g-4 mt-4 mx-1">
-  <div class="col" *ngFor="let item of productos; let i">
+  <div class="col" *ngFor="let item of productosMostrar; let i" >
     <div
       routerLink="{{ item }}"
       routerLinkActive="active"
@@ -14,7 +14,7 @@
       <div class="card bg-dark ">
         <div class="card-body ">
           <h5 class="card-title text-light">{{ item.nombre }}</h5>
-          <p class="card-text text-light"> {{ item.modelo}}</p>
+          <p class="card-text text-light"> {{ item.categoria}}</p>
         </div>
         <div class="card-footer bg-transparent border-success">
           <p class="card-text text-light">$ {{ item.precio }}</p>
