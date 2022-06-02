@@ -8,9 +8,10 @@ import { RelojesService } from 'src/app/Relojes/services/relojes.service';
   styleUrls: ['./sidebar.component.css'],
 })
 export class SidebarComponent {
-  constructor(private _servicesCategorias: RelojesService) {}
+  constructor(private _servicesCategorias: RelojesService) {
+  }
 
   get categorias() {
     return this._servicesCategorias.categorias;
-  }
+   }
 }

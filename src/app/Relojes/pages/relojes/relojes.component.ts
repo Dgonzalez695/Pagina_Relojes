@@ -10,41 +10,17 @@ import { productos } from '../../interfaces/productos.interface';
   styleUrls: ['./relojes.component.css'],
 })
 export class RelojesComponent {
-  productosMostrar: productos[] = [];
-  itemCategoria!: number;
 
-  constructor(
-    private _servicesRelojes: RelojesService,
-    private route: Router,
-    private router: ActivatedRoute
-  ) {
-    this.buscarProductos();
-  }
-  get productos() {
-    return this._servicesRelojes.productos;
+
+  constructor(private router: Router,private _servicesRelojes: RelojesService) {
+   
+}
+
+
+  get productos(){
+   return this._servicesRelojes.productos;
   }
 
-  get categorias() {
-    return this._servicesRelojes.categorias;
-  }
 
-  ngDoCheck() {
-    if (
-      this.itemCategoria !== Number(this.router.snapshot.paramMap.get('categ'))
-    ) {
-      this.buscarProductos();
-    }
-  }
 
-  buscarProductos() {
-    this.itemCategoria = Number(this.router.snapshot.paramMap.get('categ'));
-    this.productosMostrar.length = 0;
-    for (var item of this.productos) {
-      console.log('entre');
-      if (item.categoria == this.itemCategoria) {
-        console.log(item);
-        this.productosMostrar.push(item);
-      }
-    }
-  }
 }

@@ -1,6 +1,10 @@
 export interface categorias{
-  id: number,
-  nombre: string,
-  CodCategoria: string,
+
+    idCategoria:        number;
+    codCategoria:       string;
+    nombre:             string;
+    idTienda:           string;
+    idTiendaNavigation: string;
+    productos:          any[];
 }
 

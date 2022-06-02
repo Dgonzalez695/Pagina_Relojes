@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { productos } from '../../interfaces/productos.interface';
 import { RelojesService } from '../../services/relojes.service';
 
 @Component({
@@ -7,26 +8,36 @@ import { RelojesService } from '../../services/relojes.service';
   templateUrl: './categoria.component.html',
   styleUrls: ['./categoria.component.css'],
 })
-export class CategoriaComponent{
+export class CategoriaComponent implements OnInit {
+  productosMostrar: productos[] = [];
+  itemCategoria!: number;
 
-  itemCategoria : string = '';
-  constructor(private services: RelojesService, private route: Router, private router: ActivatedRoute) {}
+  constructor(
+    private _servicesRelojes: RelojesService,
+    private route: Router,
+    private router: ActivatedRoute
+  ) {
+    // debugger
+    // this.itemCategoria = Number(this.router.snapshot.paramMap.get('categ'));
+  }
+  ngOnInit() {
+    this.router.paramMap.subscribe(params => {
+      this.itemCategoria = parseInt(params.get("categ") + "" );
+      this._servicesRelojes.getProducto(this.itemCategoria);
+    });
 
-  ngDoCheck(){
-    if (this.itemCategoria !== this.router.snapshot.paramMap.get('categ')!.toString()) {
-     this.mostrarCategoria();
-    }
   }
 
-  mostrarCategoria(){
-    this.itemCategoria = this.router.snapshot.paramMap.get('categ')!.toString()
-    // console.log(this.itemCategoria)
-  }
+  // Trayendo datos del service
 
+  get getproductos() {
+    return this._servicesRelojes.getProducto;
+  }
 
   get categorias() {
-    return this.services.categorias;
+    return this._servicesRelojes.categorias;
   }
 
 
 }
+
