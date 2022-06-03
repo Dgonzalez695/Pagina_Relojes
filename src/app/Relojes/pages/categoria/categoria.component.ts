@@ -31,7 +31,7 @@ export class CategoriaComponent implements OnInit {
   // Trayendo datos del service
 
   get getproductos() {
-    return this._servicesRelojes.getProducto;
+    return this._servicesRelojes.producto;
   }
 
   get categorias() {
