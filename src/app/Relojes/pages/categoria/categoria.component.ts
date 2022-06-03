@@ -18,20 +18,19 @@ export class CategoriaComponent implements OnInit {
     private router: ActivatedRoute
   ) {
     // debugger
-    // this.itemCategoria = Number(this.router.snapshot.paramMap.get('categ'));
   }
+
+  //Ejecutando el metodo para obtener los relojes ya filtrados por categoria
   ngOnInit() {
     this.router.paramMap.subscribe(params => {
       this.itemCategoria = parseInt(params.get("categ") + "" );
       this._servicesRelojes.getProducto(this.itemCategoria);
     });
-
   }
 
   // Trayendo datos del service
-
   get getproductos() {
-    return this._servicesRelojes.getProducto;
+    return this._servicesRelojes.producto;
   }
 
   get categorias() {
