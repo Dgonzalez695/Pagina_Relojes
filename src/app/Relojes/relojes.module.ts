@@ -12,16 +12,18 @@ import { DetallesRelojComponent } from './pages/detalles-reloj/detalles-reloj.co
   declarations: [
     DetallesRelojComponent,
     RelojesComponent,
-    CategoriaComponent
+    CategoriaComponent,
   ],
   exports: [
     DetallesRelojComponent,
-    RelojesComponent
+    RelojesComponent,
+    CategoriaComponent,
   ],
 
   imports: [
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ]
 })
 export class RelojesModule { }

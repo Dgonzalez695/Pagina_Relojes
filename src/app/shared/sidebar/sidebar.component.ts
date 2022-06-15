@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { categorias } from 'src/app/Relojes/interfaces/categorias.interface';
 import { RelojesService } from 'src/app/Relojes/services/relojes.service';
 
 @Component({

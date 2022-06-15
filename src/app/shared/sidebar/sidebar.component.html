@@ -1,11 +1,7 @@
-<!-- <div class="row mt-4 row-cols-md-1 g-2 mx-1 w-auto h-auto" id="sidebar"> -->
-  <!-- <div class="col mt-4"> -->
+
       <h3 class="text-center"><strong>CATEGORIAS</strong></h3>
       <hr>
-      <!-- </div> -->
 
-      <!-- <div class="col mt-3 mx-1"> -->
-        <!-- <ul class="list-group mx-auto justify-content-center"> -->
           <p
           *ngFor="let item of categorias"
           routerLink="relojes/categoria/{{ item.idCategoria }}"
@@ -17,6 +13,3 @@
             {{ item.nombre | titlecase }}
           </strong>
         </p>
-        <!-- </ul> -->
-  <!-- </div> -->
-<!-- </div>  -->

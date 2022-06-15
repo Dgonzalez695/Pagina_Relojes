@@ -6,12 +6,12 @@ import { CategoriaComponent } from './Relojes/pages/categoria/categoria.componen
 
 const routes: Routes = [
   {
-    path: 'relojes',
+    path: '',
     component: RelojesComponent,
     pathMatch: 'full',
   },
   {
-    path: 'detallesreloj',
+    path: 'detalles',
     component: DetallesRelojComponent,
   },
   {
@@ -20,7 +20,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'relojes',
+    redirectTo: '',
   },
 ];
 

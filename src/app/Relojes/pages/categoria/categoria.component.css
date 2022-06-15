@@ -1,0 +1,21 @@
+.rel{
+  cursor:pointer;
+}
+
+.card-body{
+  background-color: #000100;
+}
+
+.card-footer{
+  background-color: #323132;
+}
+
+.card-title{
+text-align: center;
+color: #ddc942;
+}
+
+.card-text{
+  text-align: center;
+  color: #ddc942;
+}

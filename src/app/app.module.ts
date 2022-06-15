@@ -14,7 +14,8 @@ import { HttpClientModule} from '@angular/common/http';
     RelojesModule,
     SharedModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
